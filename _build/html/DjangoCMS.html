@@ -109,6 +109,12 @@
 <li class="toctree-l2"><a class="reference internal" href="#nginx-uwsgi">🔸 nginx ➜ uwsgi 配置</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="#id16">🔸 后台帐号创建</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#bootstarp">🔸 bootstarp 插件安装.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#id17">🔸 首页修改.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#https">🔸 HTTPS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#git">🔸 git 备份.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#github">🔸 GitHub 准备</a></li>
 </ul>
 
             
@@ -665,7 +671,10 @@ nginx     15892  www    6u  IPv4 147886      0t0  TCP <a href="#id14"><span clas
 <p>⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️——⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️
 🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵 mycms 配置 🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵
 ⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️——⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️</p>
-<p>🔸 后台帐号创建</p>
+</div>
+</div>
+<div class="section" id="id16">
+<h1>🔸 后台帐号创建<a class="headerlink" href="#id16" title="永久链接至标题">¶</a></h1>
 <blockquote>
 <div><p>cd /home/mycms &amp;&amp; source /home/djcmsenv/bin/activate</p>
 <blockquote>
@@ -677,7 +686,9 @@ nginx     15892  www    6u  IPv4 147886      0t0  TCP <a href="#id14"><span clas
 简单点下个模板稍微修改下…
 博客主要的是内容.. 外观么… 有精力可以搞搞..</p>
 </div></blockquote>
-<p>🔸 bootstarp 插件安装.</p>
+</div>
+<div class="section" id="bootstarp">
+<h1>🔸 bootstarp 插件安装.<a class="headerlink" href="#bootstarp" title="永久链接至标题">¶</a></h1>
 <blockquote>
 <div><p>⦿ 这个插件可以让你快速建立网页布局.</p>
 <p>cd /home/mycms &amp;&amp; source /home/djcmsenv/bin/activate</p>
@@ -695,7 +706,9 @@ python /home/mycms/manage.py migrate</p>
 <dd>就多了个..  bootstarp 插件可以用</dd>
 </dl>
 </div></blockquote>
-<p>🔸 首页修改.</p>
+</div>
+<div class="section" id="id17">
+<h1>🔸 首页修改.<a class="headerlink" href="#id17" title="永久链接至标题">¶</a></h1>
 <p>⦿ 模板下载.</p>
 <blockquote>
 <div><ul class="simple">
@@ -845,7 +858,9 @@ favicon.ico</p>
 &lt;link rel=”mask-icon” href=”/static/favicons/safari-pinned-tab.svg” color=”#5bbad5”&gt;
 &lt;meta name=”theme-color” content=”#ffffff”&gt;</p>
 </div></blockquote>
-<p>🔸 HTTPS</p>
+</div>
+<div class="section" id="https">
+<h1>🔸 HTTPS<a class="headerlink" href="#https" title="永久链接至标题">¶</a></h1>
 <blockquote>
 <div>首先去阿里云 申请免费的 ssl证书. www.0214.live
 然后下载 Nginx 版本的证书
@@ -894,7 +909,9 @@ lsync 需要你有一个公网IP的电脑.
 git的缺点是 手动备份. 要commint后才会备份.
 lsync 优点是 自动备份. 有任何修改就会自动同步到远端服务器.</dd>
 </dl>
-<p>🔸 git 备份.</p>
+</div>
+<div class="section" id="git">
+<h1>🔸 git 备份.<a class="headerlink" href="#git" title="永久链接至标题">¶</a></h1>
 <blockquote>
 <div><p>git 安装      yum install git
 查看版本      git –version
@@ -905,17 +922,18 @@ lsync 优点是 自动备份. 有任何修改就会自动同步到远端服务�
 添加远程仓库   git remote add origin <a class="reference external" href="mailto:git&#37;&#52;&#48;github&#46;com">git<span>&#64;</span>github<span>&#46;</span>com</a>:xxxx.git
 push本地代码到远程仓库  git push -u origin master</p>
 </div></blockquote>
-<dl class="docutils">
-<dt>🔸 GitHub 准备</dt>
-<dd><dl class="first last docutils">
+</div>
+<div class="section" id="github">
+<h1>🔸 GitHub 准备<a class="headerlink" href="#github" title="永久链接至标题">¶</a></h1>
+<blockquote>
+<div><dl class="docutils">
 <dt>⦿ github 创建一个空仓库:mycms</dt>
 <dd>为了避免冲突，先不要勾选 README 和 LICENSE 选项</dd>
 <dt>⦿ 获取仓库地址.</dt>
 <dd>项目右上角 clone or download &gt; 获取 https 地址.
 <a class="reference external" href="https://github.com/Xu-Jian/mycms.git">https://github.com/Xu-Jian/mycms.git</a></dd>
 </dl>
-</dd>
-</dl>
+</div></blockquote>
 <p>🔸 VPS 准备</p>
 <blockquote>
 <div><dl class="docutils">
@@ -2547,6 +2565,7 @@ base.html 中  {% block content %}{% endblock %} 这行会被 fullwidth.html中�
 <p>&lt;!– Footer –&gt;
 &lt;footer&gt;</p>
 </div></blockquote>
+<p>基础模板是 base.html!!!!!!</p>
 <p>🔵 模板
 <a class="reference external" href="http://docs.django-cms.org/en/latest/how_to/templates.html">http://docs.django-cms.org/en/latest/how_to/templates.html</a></p>
 <p>所有django cms 网页的基础模板就是 base.html
@@ -2683,7 +2702,6 @@ Github:  <a class="reference external" href="https://github.com/nephila/djangocm
 GCE 肯定的污蔑我挖矿.. 把我项目关了. 两天也不见回复.  我的数据怎么办啊!!!
 数据库是做了主从的. 但是 djangocms项目没有啊..
 看来这货也需要用mysql. 把最重要的数据库进行备份了….</p>
-</div>
 </div>
 
 
